@@ -7,7 +7,7 @@ get_text<-function(url,index,author)
   options(HTTPUserAgent='Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3')
   text = paste(index,"_",author,".txt",sep='')
   file.create(text)
-  download.file(url, destfile = text)
+  download.file(url, destfile = text,method='curl')
   
   fin_text <- readLines(text)
   
