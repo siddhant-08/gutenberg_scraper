@@ -31,4 +31,7 @@ pos_tagger was succesfully tested on Ubuntu 14.04 LTS, Windows 8.1 and Windows 1
 
 N.B. TreeTagger installs the english parameter file as 'english-utf8.par' whereas koRpus looks for 'english.par' so kindly rename the file in the 'lib' folder of your treetagger installation before proceeding further. This problem could exist for other languages as well so kindly take note.
 
+### mallet_integration
+This is a complete workflow from taking a corpus as input,cleaning it and performing topic modelling using the mallet package based on the Latent Dirichlet Allocation(LDA) algorithm.
+
 Do let me know of any bugs or suggestions by dropping me a mail at [siddhantsingh707@gmail.com](mailto:siddhantsingh707@gmail.com)
