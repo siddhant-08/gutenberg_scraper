@@ -34,7 +34,7 @@ N.B. TreeTagger installs the english parameter file as 'english-utf8.par' wherea
 ### mallet_integration
 This is a complete workflow from taking a corpus as input,cleaning it and performing topic modelling using the mallet package based on the Latent Dirichlet Allocation(LDA) algorithm.
 
-### authpr_scrap
+### author_scrap
 
 This function takes an author's name as input . It then searches for the author on the project gutenberg site and saves all the works of the author as a text file.
 
