@@ -8,8 +8,7 @@ gutenberg_scraper <-function(url="http://www.gutenberg.org/cache/epub/100/pg100.
     }
     text_file=readLines(down_file)
   
-  # The Licence at the end of all E-Books on the GUTENBERG Project
-  # are of the type
+  # The Licence at the end of all E-Books on the GUTENBERG Project are of the type
   # *** END OF THIS PROJECT GUTENBERG EBOOK 'Name of the Book'
   
   # a denotes the line number of that particular line
