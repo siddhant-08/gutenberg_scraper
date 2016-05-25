@@ -1,19 +1,23 @@
 #user:siddhant_08
 #created: 20/03/2016
 
-
 # code to generate a vector of the most frequent words in a corpus using tm and stylo
 # also performs cluster analysis using stylo
-# NEW: topic modelling via mallet using LDA algorithm
-library(tm)
+# topic modelling via mallet using LDA algorithm
 # SnowballC enables parallel computing in the tm_map function for stemming.
 # tm_map calls functions of the 'parallel' package.
 # also Uses mclapply under the hood.
- 
-library(SnowballC)
-library(stylo)
-library(mallet)
-library(parallel)
+# 'parallel'does not work for windows so only a single core will be used
+
+if(!require(tm) | !require(SnowballC) | !require(stylo) | !require(mallet) | !require(parallel)) {
+	install.packages(c('tm','SnowballC','stylo','mallet','parallel'))
+}  
+
+require(tm)
+require(SnowballC)
+require(stylo)
+require(mallet)
+require(parallel)
  
 heritage<- VCorpus(DirSource("looted_heritage_reports"))
  
